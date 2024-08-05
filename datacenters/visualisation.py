@@ -36,7 +36,6 @@ from dash.dependencies import Input, Output
 from dash import dcc, html
 import plotly.graph_objects as go
 import pandas as pd
-import numpy as np
 
 # Create a Dash application
 app = dash.Dash(__name__, external_stylesheets=['https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css', 'styles.css'])
@@ -120,6 +119,9 @@ app.layout = html.Div(
                     style={'border': '1px solid black', 'padding': '10px'},
                     children=[
                         html.H3('plot 2'),
+                        dcc.Graph(
+                            id='size-graph',
+                        ),
                     ]
                 ),
                 html.Div(
@@ -127,6 +129,25 @@ app.layout = html.Div(
                     style={'border': '1px solid black', 'padding': '10px'},
                     children=[
                         html.H3('plot 3'),
+                        dcc.Graph(
+                            id='power-graph',
+                        ),
+                    ]
+                ),
+            ]
+        ),
+        html.Div(
+            className='row',
+            style={'display': 'flex', 'justifyContent': 'center', 'border': '1px solid black', 'padding': '10px'},
+            children=[
+                html.Div(
+                    className='col-12',
+                    style={'border': '1px solid black', 'padding': '10px'},
+                    children=[
+                        html.H3('plot 3'),
+                        dcc.Graph(
+                            id='power-graph',
+                        ),
                     ]
                 ),
             ]
@@ -212,5 +233,72 @@ def update_quantity(filter_value) -> go.Figure:
     fig.update_layout(shapes=shapes, xaxis=dict(type='category'), yaxis=dict(type='log'), margin=dict(l=0, r=0, t=0, b=0),)
 
     return fig
+
+# Define the callback to update the graph based on dropdown selection
+@app.callback(
+    Output('size-graph', 'figure'),
+    [Input('compare-filter', 'value')]
+)
+def update_size(filter_value) -> go.Figure:
+    # Filter data based on dropdown selection
+    if filter_value == 'COUNTRY':
+        filtered_data = location_data.groupby('country')
+    elif filter_value == 'COMPANY':
+        filtered_data = location_data.groupby('name')
+    else:
+        pass
+
+    traces = []
+    for key, group in filtered_data:
+        if len(y := group['total space (sqft)']) > 100:
+            traces.append(go.Box(name=key, y=y))
+
+    layout = go.Layout(
+        title='Data Centre Size',
+        xaxis_title='Country',
+        yaxis=dict(title='Size (sqft)', type='log'),
+        template='plotly_dark',
+        margin=dict(l=0, r=0, t=0, b=0),
+    )
+
+    fig = go.Figure(data=traces, layout=layout)
+
+    return fig
+
+def create_pie(data, val_col, lab_col):
+    total = data[val_col].sum()
+    data['percentage'] = data[val_col] / total
+    large = data[data['percentage'] >= 0.02]
+    small = data[data['percentage'] < 0.02]
+    other = small[val_col].sum()
+    if other > 0:
+        large = large._append(pd.DataFrame({lab_col: ['other'], val_col: other, 'percentage': [other / total]}))
+    data = go.Pie(
+        labels=large[lab_col],
+        values=large[val_col],
+        textinfo='label+percent',
+        insidetextorientation='radial',
+    )
+    layout = go.Layout(
+        title='Data Centre Power',
+        template='plotly_dark',
+    )
+    return go.Figure(data=[data], layout=layout)
+
+# Define the callback to update the graph based on dropdown selection
+@app.callback(
+    Output('power-graph', 'figure'),
+    [Input('compare-filter', 'value')]
+)
+def update_power(filter_value) -> go.Figure:
+    # Filter data based on dropdown selection
+    if filter_value == 'COUNTRY':
+        filtered_data = location_data.groupby('country')['total power (MW)'].sum().reset_index()
+        return create_pie(filtered_data, 'total power (MW)', 'country')
+    elif filter_value == 'COMPANY':
+        filtered_data = location_data.groupby('name')['total power (MW)'].sum().reset_index()
+        return create_pie(filtered_data, 'total power (MW)', 'name')
+    else:
+        return
 
 app.run_server(debug=True)
