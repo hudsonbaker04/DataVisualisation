@@ -63,7 +63,7 @@ app.layout = html.Div(className='main-container', children=[
                 ]),
                 html.Div(className='adjust-minimum', children=[
                     html.Label(className='slider-label', children='Minimum #:'),
-                    dcc.Slider(0.99, (max_ := 8), step=None, marks={i: str(2 ** i) for i in range(max_ + 1)}, value=4, id='minimum-slider', className='slider-widget'),
+                    dcc.RangeSlider(min=0.99, max=(max_ := 8), step=None, marks={i: str(2 ** i) for i in range(max_ + 1)}, value=[4, 6], id='minimum-slider', className='slider-widget'),
                 ]),
             ]),
         ]),
@@ -122,9 +122,9 @@ def world_plot(lon, lat, text, marker) -> go.Figure:
 
 @app.callback(  # callback to update map based on checklist selection
     Output('map-graph', 'figure'),
-    [Input('power-filter', 'value')],
+    [Input('power-filter', 'value'), Input('minimum-slider', 'value')],
 )
-def update_map(filter) -> go.Figure:
+def update_map(filter, num) -> go.Figure:
     '''Redraw the map depending on which data is selected for plotting by the user.'''
     if filter == ['WITH_POWER']:
         filtered_data: pd.DataFrame = location_data[location_data['total power (MW)'] > 0]
@@ -154,17 +154,19 @@ def update_map(filter) -> go.Figure:
         )
     )
 
-def create_lollipop(data, filter, min_=1) -> go.Figure:
+def create_lollipop(data, filter, min_, max_) -> go.Figure:
+    if max_ == 256:
+        max_ = 2048  # set the max to go above the range slider and show top values
     fig = go.Figure()
     fig.add_trace(go.Scatter(
-            x=[a[0] for a in data if len(a[1]) > min_],  # strings
-            y=[len(a[1]) for a in data if len(a[1]) > min_],  # data values
+            x=[a[0] for a in data if len(a[1]) > min_ and len(a[1]) < max_],  # strings
+            y=[len(a[1]) for a in data if len(a[1]) > min_ and len(a[1]) < max_],  # data values
             mode='markers', marker=dict(color='red'), fillcolor=BACKGROUND
     ))
     shapes: list = []
     i = 0
     for _, group in data:
-        if len(group) > min_:
+        if len(group) > min_ and len(group) < max_:
             shapes.append(  # create the lines for the lollipop diagram
                 dict(type='line', xref='x', yref='y', x0=i, y0=0.9, x1=i, y1=len(group), line=dict(color='#fff', width=1))
             )
@@ -199,17 +201,19 @@ def update_quantity(filter, num) -> go.Figure:
     '''Redraw the quantity lollipop chart depending on which comparison category is selected.'''
     if filter == 'COUNTRY':
         filtered_data: DataFrameGroupBy = location_data.groupby('country')
-        return create_lollipop(data=filtered_data, filter='Country', min_=2 ** num)
+        return create_lollipop(data=filtered_data, filter='Country', min_=2 ** min(num), max_=2 ** max(num))
     else:
         filtered_data = location_data.groupby('name')
-        return create_lollipop(data=filtered_data, filter='Company', min_=2 ** num)
+        return create_lollipop(data=filtered_data, filter='Company', min_=2 ** min(num), max_=2 ** max(num))
 
-def create_box(data, filter, min_) -> go.Figure:
+def create_box(data, filter, min_, max_) -> go.Figure:
     '''Create the go.Box plot.'''
+    if max_ == 256:
+        max_ = 2048
     traces: list = []
-    colours = px.colors.sequential.OrRd
+    colours = px.colors.qualitative.Plotly
     for i, (key, group) in enumerate(data):
-        if len(y := group['total space (sqft)']) > min_:
+        if len(y := group['total space (sqft)']) > min_ and len(y := group['total space (sqft)']) < max_:
             traces.append(go.Box(
                 name=key, y=y,
                 marker=dict(color=colours[i % len(colours)])
@@ -234,10 +238,10 @@ def update_size(filter, num) -> go.Figure:
     '''Redraw the box plots depending on which comparison category is selected.'''
     if filter == 'COUNTRY':
         filtered_data: DataFrameGroupBy = location_data.groupby('country')
-        return create_box(data=filtered_data, filter='Country', min_=2 ** num)
+        return create_box(data=filtered_data, filter='Country', min_=2 ** min(num), max_=2 ** max(num))
     else:
         filtered_data = location_data.groupby('name')
-        return create_box(data=filtered_data, filter='Company', min_=2 ** num)
+        return create_box(data=filtered_data, filter='Company', min_=2 ** min(num), max_=2 ** max(num))
 
 def create_pie(data, val_col, lab_col) -> go.Figure:
     total: float = data[val_col].sum()
@@ -255,7 +259,7 @@ def create_pie(data, val_col, lab_col) -> go.Figure:
         insidetextorientation='radial',
         hoverinfo='label+percent+value',
         marker=dict(
-            colors=px.colors.sequential.OrRd,  # Use Plotly's qualitative color palette
+            colors=px.colors.qualitative.Plotly,  # Use Plotly's qualitative color palette
             line=dict(color='#121212', width=2)  # White borders with width 2
         ),
     )
@@ -276,17 +280,16 @@ def create_pie(data, val_col, lab_col) -> go.Figure:
 )
 def update_power(filter, num) -> go.Figure:
     '''Redraw the pie chart depending on which comparsion category is selected.'''
+    if max(num) == 8:
+        num[num.index(max(num))] = 11
     if filter == 'COUNTRY':
-        datacenter_counts = location_data['country'].value_counts()
-        filtered_countries = datacenter_counts[datacenter_counts > 2 ** num].index
-        filtered_data = location_data[location_data['country'].isin(filtered_countries)]
-        grouped_data = filtered_data.groupby('country')['total power (MW)'].sum().reset_index()
-        return create_pie(grouped_data, 'total power (MW)', 'country')
+        key = 'country'
     else:
-        datacenter_counts = location_data['name'].value_counts()
-        filtered_companies = datacenter_counts[datacenter_counts > 2 ** num].index
-        filtered_data = location_data[location_data['name'].isin(filtered_companies)]
-        grouped_data = filtered_data.groupby('name')['total power (MW)'].sum().reset_index()
-        return create_pie(grouped_data, 'total power (MW)', 'name')
+        key = 'name'
+    datacenter_counts = location_data[key].value_counts()
+    filtered = datacenter_counts[(datacenter_counts > 2 ** min(num)) & (datacenter_counts < 2 ** max(num))].index
+    filtered_data = location_data[location_data[key].isin(filtered)]
+    grouped_data = filtered_data.groupby(key)['total power (MW)'].sum().reset_index()
+    return create_pie(grouped_data, 'total power (MW)', key)
 
 app.run_server(debug=True)
