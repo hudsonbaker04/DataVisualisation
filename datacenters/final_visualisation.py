@@ -48,11 +48,19 @@ app.layout = html.Div(className='main-container', children=[
             html.H1('Visualising Global Data Centres'),
             html.P(
                 '''
-                This is a dashboard to facilitate exploration of data centre
-                locations and statistics globally. Note that some data is not
-                openly available as these facilities are privately owned.
+                Data centres play a vital but largely unseen role in everyday
+                internet activity. This dashboard explores where these centres
+                are located, who owns them, and how large they are.
                 '''
             ),
+            html.P(
+                '''
+                *Note, some data (particularly related to China) is not openly
+                available. Keep this in consideration during comparisons.
+                '''
+            ),
+            html.P('''Use the drop down to compare by country or by owning company.
+                   Use the range slider to filter based on the number of data centres owned.'''),
             html.Div(className='compare-widget-container', children=[
                 html.Div(className='compare-by', children=[
                     html.Label(className='compare-widget-label', children='Compare by:'),
@@ -62,7 +70,7 @@ app.layout = html.Div(className='main-container', children=[
                     ], value='COUNTRY', searchable=False, clearable=False),
                 ]),
                 html.Div(className='adjust-minimum', children=[
-                    html.Label(className='slider-label', children='Minimum #:'),
+                    html.Label(className='slider-label', children='# Centres:'),
                     dcc.RangeSlider(min=0.99, max=(max_ := 8), step=None, marks={i: str(2 ** i) for i in range(max_ + 1)}, value=[4, 6], id='minimum-slider', className='slider-widget'),
                 ]),
             ]),
@@ -74,8 +82,8 @@ app.layout = html.Div(className='main-container', children=[
                 html.Div(className='map-widget', children=[
                     html.Label(className='map-label', children='Filter by Power'),
                     dcc.Checklist(className='checklist-container', id='power-filter', options=[
-                        {'label': html.Span(className='check-text', children='With Power'), 'value': 'WITH_POWER'},
-                        {'label': html.Span(className='check-text', children='Without Power'), 'value': 'WITHOUT_POWER'},
+                        {'label': html.Span(className='check-text', children='Power Known'), 'value': 'WITH_POWER'},
+                        {'label': html.Span(className='check-text', children='Power Unknown'), 'value': 'WITHOUT_POWER'},
                     ], value=['WITH_POWER']),
                 ]),
             ])
