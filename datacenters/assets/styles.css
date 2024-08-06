@@ -95,6 +95,13 @@
     padding: 0;
 }
 
+.map-description {
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
 .compare-widget-container {
     font-family: 'Courier New', Courier, monospace;
     display: flex;
@@ -207,4 +214,10 @@
 
 .power-container {
     width: 100%;
+}
+
+.plot-description {
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
 }

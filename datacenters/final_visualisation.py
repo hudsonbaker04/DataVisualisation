@@ -59,7 +59,7 @@ app.layout = html.Div(className='main-container', children=[
                 available. Keep this in consideration during comparisons.
                 '''
             ),
-            html.P('''Use the drop down to compare by country or by owning company.
+            html.P('''Use the drop down to filter all graphs and compare by country or by owning company.
                    Use the range slider to filter based on the number of data centres owned.'''),
             html.Div(className='compare-widget-container', children=[
                 html.Div(className='compare-by', children=[
@@ -71,7 +71,7 @@ app.layout = html.Div(className='main-container', children=[
                 ]),
                 html.Div(className='adjust-minimum', children=[
                     html.Label(className='slider-label', children='# Centres:'),
-                    dcc.RangeSlider(min=0.99, max=(max_ := 8), step=None, marks={i: str(2 ** i) for i in range(max_ + 1)}, value=[4, 6], id='minimum-slider', className='slider-widget'),
+                    dcc.RangeSlider(min=0.99, max=(max_ := 8), step=None, marks={i: str(2 ** i) for i in range(max_ + 1)}, value=[4, 8], id='minimum-slider', className='slider-widget'),
                 ]),
             ]),
         ]),
@@ -85,6 +85,12 @@ app.layout = html.Div(className='main-container', children=[
                         {'label': html.Span(className='check-text', children='Power Known'), 'value': 'WITH_POWER'},
                         {'label': html.Span(className='check-text', children='Power Unknown'), 'value': 'WITHOUT_POWER'},
                     ], value=['WITH_POWER']),
+                    html.P(className='map-description', children=
+                           '''
+                           Explore data centre locations on this interactive globe with sizes
+                           proportionate to power consumption (where known).
+                           '''
+                    ),
                 ]),
             ])
         ]),
@@ -94,14 +100,32 @@ app.layout = html.Div(className='main-container', children=[
             html.Div(className='plot1', children=[
                 html.H3('Data Centre Quantity'),
                 dcc.Graph(className='quantity-container', id='quantity-graph'),
+                html.P(className='plot-description', children=
+                       '''
+                       Compare the number of data centres located in a specific country or
+                       owned by a certain company.
+                       '''
+                ),
             ]),
             html.Div(className='plot2', children=[
                 html.H3('Data Centre Size'),
                 dcc.Graph(className='size-container', id='size-graph'),
+                html.P(className='plot-description', children=
+                       '''
+                       Compare the average and spread of data centre sizes located in a specific
+                       country or owned by a certain company.
+                       '''
+                ),
             ]),
             html.Div(className='plot3', children=[
                 html.H3('Data Centre Power'),
                 dcc.Graph(className='power-container', id='power-graph'),
+                html.P(className='plot-description', children=
+                       '''
+                       Compare the proportion of total power that data centres located in a
+                       specific country or owned by a certain company account for.
+                       '''
+                ),
             ]),
         ]),
     ])
@@ -130,16 +154,26 @@ def world_plot(lon, lat, text, marker) -> go.Figure:
 
 @app.callback(  # callback to update map based on checklist selection
     Output('map-graph', 'figure'),
-    [Input('power-filter', 'value'), Input('minimum-slider', 'value')],
+    [Input('power-filter', 'value'), Input('compare-filter', 'value'), Input('minimum-slider', 'value')],
 )
-def update_map(filter, num) -> go.Figure:
+def update_map(power, owner, num) -> go.Figure:
     '''Redraw the map depending on which data is selected for plotting by the user.'''
-    if filter == ['WITH_POWER']:
-        filtered_data: pd.DataFrame = location_data[location_data['total power (MW)'] > 0]
-    elif filter == ['WITHOUT_POWER']:
-        filtered_data = location_data[location_data['total power (MW)'] == 0]
-    elif len(filter) == 2:  # both selected
-        filtered_data = location_data
+    if max(num) == 8:
+        num[num.index(max(num))] = 2048
+    if owner == 'COUNTRY':
+        key = 'country'
+    else:
+        key = 'name'
+    counts = location_data[key].value_counts()
+    filtered = counts[(counts > 2 ** min(num)) & (counts < 2 ** max(num))].index
+    filtered_data = location_data[location_data[key].isin(filtered)]
+
+    if power == ['WITH_POWER']:
+        filtered_data: pd.DataFrame = filtered_data[filtered_data['total power (MW)'] > 0]
+    elif power == ['WITHOUT_POWER']:
+        filtered_data = filtered_data[filtered_data['total power (MW)'] == 0]
+    elif len(power) == 2:  # both selected
+        filtered_data = filtered_data
     else:  # none selected
         return world_plot(lon=[0], lat=[0], text=[''], marker={'size': [0.5]})
 
@@ -192,11 +226,15 @@ def create_lollipop(data, filter, min_, max_) -> go.Figure:
         gridcolor=BACKGROUND,
         showline=True,
         ticks='outside',
+        title_font=dict(size=20),
+        tickfont=dict(size=15),
     )
 
     fig.update_yaxes(
         gridcolor=BACKGROUND,
         ticks='outside',
+        title_font=dict(size=20),
+        tickfont=dict(size=15),
     )
 
     return fig
@@ -228,8 +266,8 @@ def create_box(data, filter, min_, max_) -> go.Figure:
             ))
 
     layout = go.Layout(
-        xaxis_title=filter,
-        yaxis=dict(title='Size (sqft)', type='log'),
+        xaxis=dict(title=filter, title_font=dict(size=20), tickfont=dict(size=15)),
+        yaxis=dict(title='Size (sqft)', title_font=dict(size=20), tickfont=dict(size=15), type='log'),
         template='plotly_dark',
         margin=dict(l=0, r=0, t=0, b=0),
     )
