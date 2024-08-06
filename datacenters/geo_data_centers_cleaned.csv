@@ -22,10 +22,10 @@
 20,21,OVHCloud,france, 59820 Gravelines,Route de la Ferme Masson,,,,,50.97948161,2.147510951
 21,22,NexTDC,australia, Bruce ACT,19 Battye Street,,24326.44,,4.4,-35.2453517,149.0916334
 22,23,Polaris Data Centre,australia, Springfield Central QLD 4300,11 Mary Mackenroth Ln,,156077,78652,0.06,-27.6861177,152.9037832
-23,24,STACK INFRASTRUCTURE,usa, TX, Plano,6653 Pinecrest Drive,294000,247000,82,31.2638905,-98.5456116
+23,24,Stack Infrastructure,usa, TX, Plano,6653 Pinecrest Drive,294000,247000,82,31.2638905,-98.5456116
 24,25,IBM Cloud,usa, CA, Santa Clara,3105 Alfred Street,,,,36.7014631,-118.755997
 25,26,Amazon AWS,usa,VA, Manassas, 7500 Bethlehem Rd,,,,37.1232245,-78.4927721
-26,27,STACK INFRASTRUCTURE,italy, Province of Pavia, Siziano, 8/10,,,5,45.3979757,11.8611057
+26,27,Stack Infrastructure,italy, Province of Pavia, Siziano, 8/10,,,5,45.3979757,11.8611057
 27,28,NexTDC,australia, West Footscray VIC,25 Indwe Street,,1076391,,150,-37.80174125,144.8840739
 28,29,IBM Cloud,japan, Tokyo, Chuo City, 19-21 Nihonbashi-Hakozakichō,,,,35.6821936,139.762221
 29,30,Amazon AWS,brazil,sao simao, Brasil - Jardim Ermida I, Jundiaí - São Paulo,,,,-21.4800208,-47.5531095
@@ -35,7 +35,7 @@
 33,34,Amazon AWS,israel,Shoham,,,,,,32.0004845,34.9465419
 34,35,IBM Cloud,spain,Madrid,,,,,,40.4167047,-3.7035825
 35,36,LeaseWeb,usa,VA, Manassas, 11680 Hayden Rd,,,0.25,37.1232245,-78.4927721
-36,37,STACK INFRASTRUCTURE,italy, PV, 27010 Siziano, 8/10,75347.37,,10,45.03685465,9.137825083
+36,37,Stack Infrastructure,italy, PV, 27010 Siziano, 8/10,75347.37,,10,45.03685465,9.137825083
 37,38,NTT Communications,south korea,Seoul,,,,,,37.5666791,126.9782914
 38,39,LeaseWeb,usa,CA, San Jose,1735 Lundy Ave,157908,,,36.7014631,-118.755997
 39,40,HostDime,brazil,, João Pessoa - PB, 1223 - Estados,20000,,,31.2829848,34.2534441
@@ -179,7 +179,7 @@
 177,183,IBM Cloud,usa, TX, Dallas,1950 North Stemmons Freeway,,,,31.2638905,-98.5456116
 178,184,IBM Cloud,netherlands, 1066 VH Amsterdam,Johan Huizingalaan 765,,,,,52.3432794,4.830386352
 179,185,Apple Inc.,china, Inner Mongolia,Ulanqab,,,,,43.2443242,114.3251664
-180,186,STACK INFRASTRUCTURE,switzerland, VD, 1196 Gland,Route des Avouillons 32/34 36,165764.22,,30,46.6356963,6.5320717
+180,186,Stack Infrastructure,switzerland, VD, 1196 Gland,Route des Avouillons 32/34 36,165764.22,,30,46.6356963,6.5320717
 181,187,Amazon AWS,usa,VA, South Riding,25420 Sutton Bay Plz,145000,,,37.1232245,-78.4927721
 182,188,Amazon AWS,ireland, Dublin,Clonshaugh Business & Technology Park,,,,,53.3493795,-6.2605593
 183,189,Oracle,usa, VA,Ashburn,,,,,37.1232245,-78.4927721
@@ -325,7 +325,7 @@
 323,333,Digital Realty,mexico,76294 Qro.,,,215000,,21,20.2771607,-99.8924207
 324,334,H5 Data Centers,usa, OH, Cincinnati,360 Gest Street,80000,60000,,40.2253569,-82.6881395
 325,335,DataBank,usa, TX, Dallas,400 South Akard Street,270000,107040,7,31.2638905,-98.5456116
-326,336,"Ascenty, a Digital Realty Company",brazil, 02675-031, Osasco - SP, 306-744 - Vila Menck,43055.64,,6,-23.49394108,-46.75062385
+326,336,"Ascenty",brazil, 02675-031, Osasco - SP, 306-744 - Vila Menck,43055.64,,6,-23.49394108,-46.75062385
 327,337,Cologix,usa, FL, Jacksonville,421 West Church Street,10200,10200,,27.7567667,-81.4639835
 328,338,Telehouse,uk, London E14 2AA,Coriander Avenue,,53820,53820,,51.5156177,-0.0919983
 329,339,Equinix,usa, CO, Centennial,9706 East Easter Avenue,18900,12111,0.5,38.7251776,-105.607716
@@ -338,7 +338,7 @@
 336,346,Lumen,usa, OR, Eugene,90470 Prairie Rd,9194,1900,,43.9792797,-120.737257
 337,347,Digital Realty,south africa,Newlands East,Riverhorse Close,,37674,,1.6,,
 338,348,Zenlayer,usa, CA, Los Angeles,900 Alameda Street,,,,36.7014631,-118.755997
-339,349,"Ascenty, a Digital Realty Company",chile, Región Metropolitana, Santiago, Quilicura,11000,,15,-33.5036125,-70.7588544
+339,349,"Ascenty",chile, Región Metropolitana, Santiago, Quilicura,11000,,15,-33.5036125,-70.7588544
 340,350,H5 Data Centers,usa, OH, Cincinnati,925 Dalton Avenue,107000,,,40.2253569,-82.6881395
 341,351,Zenlayer,spain, 28037 Madrid,71,Calle de Albasanz,,,,40.43025999,-3.62352144
 342,352,Equinix,usa, CA, Santa Clara,3000 Corvin Drive,23971,15290,,36.7014631,-118.755997
@@ -396,7 +396,7 @@
 394,405,Zenlayer,china, Shanghai, Baoshan,534 Hulan Rd,,,,31.2323437,121.4691024
 395,406,Enzu,usa, TX, Houston,1301 Fannin Street,,,,31.2638905,-98.5456116
 396,407,MOD Mission Critical,usa, IL, Chicago,350 East Cermak Road,143630,50992,6,40.0796606,-89.4337288
-397,408,"Ascenty, a Digital Realty Company",brazil,Sao Paulo, 4 - Jardim Santa Izabel,Rua Papa João Paulo II,32291.73,,3,-23.5506507,-46.6333824
+397,408,"Ascenty",brazil,Sao Paulo, 4 - Jardim Santa Izabel,Rua Papa João Paulo II,32291.73,,3,-23.5506507,-46.6333824
 398,409,Enzu,usa, TX, Austin,7401 E Ben White Blvd,,,,31.2638905,-98.5456116
 399,410,China Telecom,china, Anhui, Hefei,Shushan,,,,32.0,117.0
 400,411,Digital Realty,brazil,sao simao, 350 - Vila Osasco,Avenida Roberto Pinto Sobrinho,43000,,4,-21.4800208,-47.5531095
@@ -404,7 +404,7 @@
 402,413,China Telecom,china, Guangdong, Foshan Shi,Shunde Qu,,,,23.1357694,113.1982688
 403,414,MOD Mission Critical,usa, UT, Salt Lake City,179 Social Hall Avenue,16000,10610,0.5,39.4225192,-111.714358
 404,415,CyberNest,usa, NJ 07047, North Bergen,5851 West Side Ave,,,,40.7967992,-74.0099504
-405,416,"Ascenty, a Digital Realty Company",brazil,sao simao, s/n - Parque das Industrias (Nova Veneza),Ascenty Sumaré - Rod. Anhanguera,118000,,14,-21.4800208,-47.5531095
+405,416,"Ascenty",brazil,sao simao, s/n - Parque das Industrias (Nova Veneza),Ascenty Sumaré - Rod. Anhanguera,118000,,14,-21.4800208,-47.5531095
 406,417,Digital Realty,denmark, 2750 Ballerup,Industriparken 20,,77500,,4.1,55.73319559,12.35649091
 407,418,CyrusOne,usa, TX, San Antonio,14719 Omicron Drive,175000,50000,18,31.2638905,-98.5456116
 408,419,Struxture,canada, QC, Kirkland,17500 Trans-Canada Highway,103000,,16.5,52.4760892,-71.8258668
@@ -454,7 +454,7 @@
 452,464,NTT Communications,usa, VA, Sterling,22451 Shaw Road,,,,37.1232245,-78.4927721
 453,465,Telepoint,bulgaria, 1592 Sofia,"Blvd ""Asen Yordanov"" 8",,9000,4000,,42.6497498,23.2604427
 454,466,EdgeConnex,usa,OR, Hillsboro,6327 NW Evergreen Pkwy building c suite c 300,39400,,3,43.9792797,-120.737257
-455,467,STACK INFRASTRUCTURE,sweden, 194 30 Upplands Väsby,Smedbyvägen 6,,60277.9,,12,59.517164,17.9164192
+455,467,Stack Infrastructure,sweden, 194 30 Upplands Väsby,Smedbyvägen 6,,60277.9,,12,59.517164,17.9164192
 456,468,Serverfarm,netherlands, 1101 GB Amsterdam,Keienbergweg 22,,194000,,20,52.30919684,4.93596515
 457,469,Amazon AWS,australia, Artarmon NSW,5 Broadcast Way,,,,,-33.8084051,151.184511
 458,470,Amazon AWS,usa,VA, Ashburn,44858 Interconnection Plz,150000,,,37.1232245,-78.4927721
@@ -464,7 +464,7 @@
 462,474,Oracle,usa, VA,Ashburn,,,,,37.1232245,-78.4927721
 463,475,NewTelco,germany, Innenstadt I,Kleyerstraße 88,,,,,53.8658954,10.68586485
 464,477,Amazon AWS,usa, VA, Sterling,22520 Randolph Drive,138000,,,37.1232245,-78.4927721
-465,478,STACK INFRASTRUCTURE,switzerland, 8197 Rafz,Industriestrasse,,49513.99,,10,47.61060581,8.544462493
+465,478,Stack Infrastructure,switzerland, 8197 Rafz,Industriestrasse,,49513.99,,10,47.61060581,8.544462493
 466,479,Oracle,brazil, State of São Paulo,Vinhedo,,,,,-23.45872135,-46.54266112
 467,480,Evocative,usa, CA, Emeryville,1400 65th Street,15042,15042,,36.7014631,-118.755997
 468,481,Aligned Data Centers,usa, OR, Hillsboro,NE 30th Ave & Northeast Evergreen Road,,,72,43.9792797,-120.737257
@@ -551,8 +551,8 @@
 549,565,Skybox Datacenters,usa, TX, Plano,6800 Communications Parkway,400000,,100,31.2638905,-98.5456116
 550,566,Amazon AWS,usa,OR, Boardman,Olson Rd SE,,,,43.9792797,-120.737257
 551,567,ByteGrid,usa, IL, Aurora,4267 Meridian Parkway,70000,34000,,40.0796606,-89.4337288
-552,568,STACK INFRASTRUCTURE,switzerland, Avenches,Route de l'Estivage,,22604.21,,3,46.879575,7.040941
-553,569,STACK INFRASTRUCTURE,norway, 0581 Oslo,Ulvenveien 89B,,54895.94,,8,59.9133301,10.7389701
+552,568,Stack Infrastructure,switzerland, Avenches,Route de l'Estivage,,22604.21,,3,46.879575,7.040941
+553,569,Stack Infrastructure,norway, 0581 Oslo,Ulvenveien 89B,,54895.94,,8,59.9133301,10.7389701
 554,570,Amazon AWS,usa, VA, Sterling,1304 Squire Ct,35000,,,37.1232245,-78.4927721
 555,571,IBM Cloud,usa, VA,Ashburn,,,,,37.1232245,-78.4927721
 556,572,Amazon AWS,usa,VA, Manassas, 8148 Bethlehem Road,147530,,,37.1232245,-78.4927721
@@ -579,9 +579,9 @@
 577,593,ColoCrossing,usa, CA, Santa Clara, Kenneth Street,309000,,10,36.7014631,-118.755997
 578,594,OVHCloud,france, 59820 Gravelines,Route de la Ferme Masson,,,,,50.97948161,2.147510951
 579,595,Amazon AWS,usa,OR, Umatilla,Beach Access Rd,,,,43.9792797,-120.737257
-580,596,STACK INFRASTRUCTURE,usa, Texas,Dallas,,157000,,12,31.2638905,-98.5456116
+580,596,Stack Infrastructure,usa, Texas,Dallas,,157000,,12,31.2638905,-98.5456116
 581,597,ColoBarn,usa, AZ, Tempe,8905 South Beck Avenue,28000,18000,2,34.395342,-111.763275
-582,598,STACK INFRASTRUCTURE,switzerland, 1228 Plan-les-Ouates,Chemin du Pré-Fleuri 20,,45208.42,,4,46.16637281,6.114166271
+582,598,Stack Infrastructure,switzerland, 1228 Plan-les-Ouates,Chemin du Pré-Fleuri 20,,45208.42,,4,46.16637281,6.114166271
 583,599,HopOne @CherryRoad,usa, WA, Seattle,3311 South 120th Place,,6500,1.5,47.2868352,-120.212613
 584,600,Zenlayer,south korea, Seoul, Jongno-gu,65 Daehak-ro,,,,37.5666791,126.9782914
 585,601,MOD Mission Critical,usa, NV, Las Vegas,7135 South Decatur Boulevard,,,,39.5158825,-116.853722
@@ -601,7 +601,7 @@
 599,616,Les.net,canada, MB, Winnipeg,355 Portage Avenue,,,,55.001251,-97.001038
 600,617,Tel Networks Inc.,canada, BC, Burnaby,Still Creek Drive,,,,55.001251,-125.002441
 601,618,Cologix,canada, QC, Saint-Laurent, Montréal,6000,6000,,52.4760892,-71.8258668
-602,619,"Ascenty, a Digital Realty Company",mexico, Querétaro, Villa Progreso, San José,258000,,31,20.8052225,-99.8837376
+602,619,"Ascenty",mexico, Querétaro, Villa Progreso, San José,258000,,31,20.8052225,-99.8837376
 603,620,MOD Mission Critical,qatar,Al Daayen Municipality, Zone 70,Street 1495,,,,,
 604,621,Zenlayer,china, Guangdong Province, Guangzhou, Tianhe District,,,,23.1357694,113.1982688
 605,622,Psychz Networks,netherlands, 1066 BP Amsterdam,Henk Sneevlietweg 2-6,,436756,,,52.34643488,4.831418333
@@ -613,7 +613,7 @@
 611,628,Telehouse,vietnam, Hanoi, Cầu Giấy, Dịch Vọng Hậu,20451,,,21.0283334,105.854041
 612,629,Cologix,usa, MN, Minneapolis,511 11th Avenue South,28000,28000,,45.9896587,-94.6113288
 613,630,Element Critical,usa, CA, Sunnyvale,1360 Kifer Road,96100,80000,7,36.7014631,-118.755997
-614,631,"Ascenty, a Digital Realty Company",brazil, 21535-510, Rio de Janeiro - RJ, 513 - Pavuna,75000,,10,-22.8730922,-43.2481833
+614,631,"Ascenty",brazil, 21535-510, Rio de Janeiro - RJ, 513 - Pavuna,75000,,10,-22.8730922,-43.2481833
 615,632,Colocation America,usa, IL, Chicago,600 South Federal Street,160000,,,40.0796606,-89.4337288
 616,633,CyberNest,france, 93200 Saint-Denis,114 Rue Ambroise Croizat,,,,,48.93346144,2.354968685
 617,634,Lumen,usa, CA, San Diego,8929 Aero Drive,52299,26631,,36.7014631,-118.755997
@@ -760,7 +760,7 @@
 758,782,Tel Networks Inc.,canada, ON, Toronto,151 Front Street West,,,,50.000678,-86.000977
 759,784,Lumen,usa, OR, Beaverton,707 SW Washington Ave,4663,1321,,43.9792797,-120.737257
 760,785,China Telecom,australia, Ultimo NSW 2007,400 Harris Street,,,,,-33.8794728,151.1984346
-761,786,"Ascenty, a Digital Realty Company",brazil,Paulinia,R. Sebastião Cardoso - Parque Brasil 500,,86000,,14,-22.7630391,-47.1532213
+761,786,"Ascenty",brazil,Paulinia,R. Sebastião Cardoso - Parque Brasil 500,,86000,,14,-22.7630391,-47.1532213
 762,787,Digital Realty,sweden, Kista,Esbogatan 11,,14107,,2.9,59.403311,17.9442849
 763,788,China Telecom,usa,CA, Los Angeles,900 N Alameda St,,,,36.7014631,-118.755997
 764,789,China Telecom,germany, 65933 Frankfurt am Main,Lärchenstraße 110,,,,,50.09827488,8.600775729
@@ -782,7 +782,7 @@
 780,806,LCL Belgium,belgium, Antwerp,Noorderlaan 133,,,,,51.2211097,4.3997081
 781,807,EdgeConnex,usa, CA, Santa Clara,1700 Richard Avenue,19800,,1.8,36.7014631,-118.755997
 782,808,EdgeConnex,usa,TN, Memphis,4005 S Mendenhall Rd #6,16700,,1.5,35.7730076,-86.2820081
-783,809,STACK INFRASTRUCTURE,australia, Hume ACT,56 Sheppard Street,,,,28,-35.3853817,149.1658468
+783,809,Stack Infrastructure,australia, Hume ACT,56 Sheppard Street,,,,28,-35.3853817,149.1658468
 784,810,Oracle,canada, QC,Montreal,,,,,52.4760892,-71.8258668
 785,811,Amazon AWS,china, Beijing, Shunyi District,Yanshun Road,,,,39.9057136,116.3912972
 786,812,Epsilon Telecommunications,uk, London, 69-77 Paul Street,Telephone House,5500,,,51.5074456,-0.1277653
@@ -961,7 +961,7 @@
 959,990,MOD Mission Critical,usa, NC, Raleigh,5301 Departure Drive,40000,36000,2,35.6729639,-79.0392919
 960,991,China Telecom,china, Jiangsu, Suzhou, Wuzhong District,,,,33.0000001,119.9999999
 961,992,Enzu,usa, CA, Santa Clara,2151 Mission College Boulevard,,,,36.7014631,-118.755997
-962,993,"Ascenty, a Digital Realty Company",brazil,hortolandia, 4 - Jardim Santa Izabel,Rua Papa João Paulo II,43055.64,,7,-22.8620175,-47.2164219
+962,993,"Ascenty",brazil,hortolandia, 4 - Jardim Santa Izabel,Rua Papa João Paulo II,43055.64,,7,-22.8620175,-47.2164219
 963,994,China Telecom,china, Jiangsu, Suzhou,Taicang,,,,33.0000001,119.9999999
 964,995,China Telecom,china, Shanghai Shi, Pudong Xinqu, Lu Jia Zui,,,,31.2323437,121.4691024
 965,996,Colocation America,usa, NY, New York,111 8th Avenue,3000000,104814,,43.1561681,-75.8449946
@@ -986,7 +986,7 @@
 984,1015,Iron Mountain Data Centers,india, Karnataka, Bengaluru, Whitefield,80000,,4,14.5203896,75.7223521
 985,1016,DataBank,usa, NY, New York,60 Hudson Street,1000000,23940,0.74,43.1561681,-75.8449946
 986,1017,Lumen,usa, IN, Indianapolis,1902 South East Street,20000,1740,,40.3270127,-86.1746933
-987,1018,"Ascenty, a Digital Realty Company",brazil,osasco, 350 - Vila Menck,Av. Roberto Pinto Sobrinho,43055.64,,4,-23.5324859,-46.7916801
+987,1018,"Ascenty",brazil,osasco, 350 - Vila Menck,Av. Roberto Pinto Sobrinho,43055.64,,4,-23.5324859,-46.7916801
 988,1019,China Telecom,china, Jiangsu, Nanjing,Pukou,,,,33.0000001,119.9999999
 989,1020,H5 Data Centers,usa, AZ, Chandler,2600 West Germann Road,180000,145000,26,34.395342,-111.763275
 990,1021,NorthC,netherlands, 3433 PC Nieuwegein,Frieslandhaven 6,,86111,44132,2.5,52.0182714,5.10377702
@@ -1314,7 +1314,7 @@
 1312,1365,Amazon AWS,brazil,Sao Paulo,Rua Bento Branco de Andrade Filho - Jardim Dom Bosco,,,,,-23.5506507,-46.6333824
 1313,1366,NexTDC,australia, Port Melbourne VIC 3207,826 Lorimer St,,64583.46,,15,-37.8333613,144.9219203
 1314,1367,EXA Infrastructure,spain, 28034 Madrid,4,Calle de Lezama,48437.6,,2,40.49086448,-3.695436094
-1315,1368,STACK INFRASTRUCTURE,italy, PV, 27010 Siziano, 8/10,,,,45.03685465,9.137825083
+1315,1368,Stack Infrastructure,italy, PV, 27010 Siziano, 8/10,,,,45.03685465,9.137825083
 1316,1369,Amazon AWS,china, Beijing, Chaoyang,Jiuxianqiao Road,,,,39.9057136,116.3912972
 1317,1370,Amazon AWS,usa, VA 20166, Dulles,22900 Platform Plz,,,,41.838558,-71.425049
 1318,1371,Oracle,usa, CA,San Jose,,,,,36.7014631,-118.755997
@@ -1337,8 +1337,8 @@
 1335,1390,DCI Data Centers,australia,Kidman Park SA,,,64583,18837,,-34.9122329,138.5269306
 1336,1391,Amazon AWS,usa, VA, Manassas, 7510 Mason King Ct,125000,,,37.1232245,-78.4927721
 1337,1392,Airtrunk,singapore, Pasir Ris,22 Loyang Dr,,215278,,78,1.3730307,103.949255
-1338,1393,STACK INFRASTRUCTURE,usa, VA, Ashburn,22080 Pacific Blvd,180000,,18,37.1232245,-78.4927721
-1339,1394,STACK INFRASTRUCTURE,usa, GA, Alpharetta,3200 Webb Bridge Road,102500,,19,32.3293809,-83.1137366
+1338,1393,Stack Infrastructure,usa, VA, Ashburn,22080 Pacific Blvd,180000,,18,37.1232245,-78.4927721
+1339,1394,Stack Infrastructure,usa, GA, Alpharetta,3200 Webb Bridge Road,102500,,19,32.3293809,-83.1137366
 1340,1395,Amazon AWS,japan, Kanagawa, Yokohama, Isogo Ward,,,,35.4342935,139.374753
 1341,1396,Amazon AWS,australia, Alexandria NSW 2015,47 Bourke Rd,,,,,-33.9091568,151.1921281
 1342,1397,Amazon AWS,usa,VA, South Riding,25430 Sutton Bay Plz,210000,,44,37.1232245,-78.4927721
@@ -1356,7 +1356,7 @@
 1354,1410,LeaseWeb,netherlands, 2031 BE Haarlem,J.W. Lucasweg 35,,430556,129166,15,52.39111933,4.6645012
 1355,1411,Amazon AWS,usa, OR, Boardman,Gar Swanson Drive,,,,43.9792797,-120.737257
 1356,1412,Amazon AWS,ireland, Dublin 15, Ballycoolen,Blanchardstown Corporate Park,,,,53.39493455,-6.389208545
-1357,1413,STACK INFRASTRUCTURE,usa, OR, Hillsboro,21515 NW Evergreen Pkwy,345000,,24,43.9792797,-120.737257
+1357,1413,Stack Infrastructure,usa, OR, Hillsboro,21515 NW Evergreen Pkwy,345000,,24,43.9792797,-120.737257
 1358,1414,Global Switch,australia, Ultimo NSW 2007,400 Harris Street,,336114,,38,-33.8794728,151.1984346
 1359,1415,Amazon AWS,usa, VA, Sterling,45259 West Severn Way,146000,,,37.1232245,-78.4927721
 1360,1416,EXA Infrastructure,netherlands, 1119 NH Schiphol-Rijk,Koolhovenlaan 120,,48437.6,,2,52.27934157,4.757954006
@@ -1364,9 +1364,9 @@
 1362,1418,Amazon AWS,usa, VA 20166, Sterling,42800 Fadeley Ln,180000,,32,41.838558,-71.425049
 1363,1419,Amazon AWS,usa, OH 43026, Hilliard,5117 Hayden Run Rd,154000,,,39.3321206,-84.3508736
 1364,1420,Amazon AWS,usa,VA, Ashburn,20935 Loudoun County Pkwy,147615,,,37.1232245,-78.4927721
-1365,1421,STACK INFRASTRUCTURE,australia,Truganina VIC,,,,,36,-37.8089015,144.721139
+1365,1421,Stack Infrastructure,australia,Truganina VIC,,,,,36,-37.8089015,144.721139
 1366,1422,Google,usa, NV,Sparks,,,,,39.5158825,-116.853722
-1367,1423,STACK INFRASTRUCTURE,usa, CA, San Jose,2001 Fortune Dr,140000,,9,36.7014631,-118.755997
+1367,1423,Stack Infrastructure,usa, CA, San Jose,2001 Fortune Dr,140000,,9,36.7014631,-118.755997
 1368,1424,IBM Cloud,spain,Madrid,,,,,,40.4167047,-3.7035825
 1369,1425,Amazon AWS,usa,OR, Boardman,73575 Lewis and Clark Drive,,,,43.9792797,-120.737257
 1370,1426,EdgeConnex,netherlands, 1119 NE Schiphol-Rijk,Koolhovenlaan 12,,30634.09,,7,52.28440113,4.767147425
@@ -1416,7 +1416,7 @@
 1414,1472,Flexential,usa,GA, Norcross,2775 Northwoods Pkwy,32740,10000,2.21,32.3293809,-83.1137366
 1415,1473,Equinix,germany, Frankfurt,Taubenstraße 7-9,,30720,18546,1800,50.1106444,8.6820917
 1416,1474,Equinix,usa, CA, Los Angeles,600 West 7th Street,125479,60718,2.3,36.7014631,-118.755997
-1417,1475,"Ascenty, a Digital Realty Company",brazil, 02675-031, Osasco - SP, 306-744 - Vila Menck,96875.19,,14,-23.49394108,-46.75062385
+1417,1475,"Ascenty",brazil, 02675-031, Osasco - SP, 306-744 - Vila Menck,96875.19,,14,-23.49394108,-46.75062385
 1418,1476,Equinix,uk, Slough SL1 4QZ,13 Liverpool Road,,387500,,,51.5111014,-0.5940682
 1419,1477,Lumen,usa, TX, Fort Worth,1601 Jones Street,18686,6300,,31.2638905,-98.5456116
 1420,1478,Tel Networks Inc.,canada, AB, Edmonton,10032 103 St NW,,,,55.001251,-115.002136
@@ -1518,7 +1518,7 @@
 1516,1577,QTS Data Centers,usa, Virginia 20110, Manassas,9400 Godwin Court,123200,,,33.711823,-117.7924143
 1517,1578,Technology Solutions of SC Inc,usa, SC, Seneca, U.S. 123,6800,1400,1,33.6874388,-80.4363743
 1518,1579,Flexential,usa, FL 32256, Jacksonville,4905 Belfort Road suite 145,35184,8500,1.39,46.441062,-87.916286
-1519,1580,"Ascenty, a Digital Realty Company",brazil,jundiai,Av. Beirute - Jardim Ermida I,,97000,,14,-23.1887668,-46.884506
+1519,1580,"Ascenty",brazil,jundiai,Av. Beirute - Jardim Ermida I,,97000,,14,-23.1887668,-46.884506
 1520,1581,Digital Realty,usa, CA, Santa Clara,2820 Northwestern Parkway,40000,40000,7.5,36.7014631,-118.755997
 1521,1582,DC BLOX,usa, AL, Huntsville,333 Diamond Drive Northwest,9000,,1.5,,
 1522,1583,DC BLOX,usa, TN, Chattanooga,807 East 16th Street,8000,7000,1,35.7730076,-86.2820081
@@ -1687,7 +1687,7 @@
 1685,1752,Navegalo,costa rica, San José, San José Province,Paseo Colón 2,,,,9.9325427,-84.0795782
 1686,1753,Hivelocity,usa,CA, Sunnyvale,444 Toyama Drive,,,,36.7014631,-118.755997
 1687,1754,Psychz Networks,south africa,1600, Kempton Park, Isando,,,,-26.1337502,28.2310758
-1688,1755,"Ascenty, a Digital Realty Company",brazil, 61921-430, Fortaleza - CE,1161,97000,,10,-24.27099185,-53.84336322
+1688,1755,"Ascenty",brazil, 61921-430, Fortaleza - CE,1161,97000,,10,-24.27099185,-53.84336322
 1689,1756,Limestone Networks,usa, TX, Dallas,1950 North Stemmons Freeway,,,,31.2638905,-98.5456116
 1690,1757,Digital Realty,brazil, 13185-252, Hortolândia - SP, 4 - Jardim Santa Izabel,32000,,3,-30.55010885,-52.51652319
 1691,1758,Prov.net/IronTrust Networks,usa, RI, Providence,304 Carpenter Street,10000,6000,1,41.7962409,-71.5992372
@@ -1695,7 +1695,7 @@
 1693,1760,Fortress Data Centers,usa, CA, San Francisco,274 Brannan Street,105225,20000,3.5,36.7014631,-118.755997
 1694,1761,Zenlayer,india, Telangana 500081, Hyderabad, Madhapur,,,,17.4423925,78.3971119
 1695,1762,CyberNest,usa, GA, Atlanta,345 Courtland Street Northeast,110000,45000,3,32.3293809,-83.1137366
-1696,1763,"Ascenty, a Digital Realty Company",brazil,jundiai,Rua Presbítero Plinio Alves de Souza - Jardim Ermida I,,75347.37,,15,-23.1887668,-46.884506
+1696,1763,"Ascenty",brazil,jundiai,Rua Presbítero Plinio Alves de Souza - Jardim Ermida I,,75347.37,,15,-23.1887668,-46.884506
 1697,1764,DataBank,usa, UT, Salt Lake, Bluffdale,275000,43820,3.25,39.4225192,-111.714358
 1698,1766,Flexential,usa, UT 84042, Lindon,333 South 520 West #150,9542,6336,0.57,55.3021926,25.97169631
 1699,1767,Rackspace,australia, Erskine Park NSW 2759,1-11 Templar Rd,,5166,,5.6,-33.8086111,150.8013889
@@ -1760,7 +1760,7 @@
 1758,1826,Tel Networks Inc.,usa, MN, Minneapolis,250 Marquette Avenue,,,,45.9896587,-94.6113288
 1759,1827,China Telecom,china, Fujian, Zhangzhou, Xiangcheng,,,,26.193218,118.2208721
 1760,1828,Hurricane Electric,usa, CA, San Jose, South Market Street,3000,,,36.7014631,-118.755997
-1761,1829,"Ascenty, a Digital Realty Company",brazil,Vinhedo,Avenida João Batista Falssarela - Jardim dos Passaros,,22604.21,,34,-23.0298535,-46.9749847
+1761,1829,"Ascenty",brazil,Vinhedo,Avenida João Batista Falssarela - Jardim dos Passaros,,22604.21,,34,-23.0298535,-46.9749847
 1762,1830,Nxtra by Airtel,india, Uttar Pradesh, Noida, Sector 102,,,6,27.1303344,80.859666
 1763,1831,Enzu,usa, TX, Austin,7620 Metro Center Dr,,,,31.2638905,-98.5456116
 1764,1832,Netshop ISP,malta, Qormi,54/55 Triq Manuel Borg Gauci,,559,,,35.877464,14.4739598
@@ -1838,7 +1838,7 @@
 1836,1906,uNetworks,germany, Munich,Arnulfstraße 205,,,6232,,48.1371079,11.5753822
 1837,1907,"oonami, LLC",usa, UT, West Valley City,2302 Presidents Drive,,,,39.4225192,-111.714358
 1838,1908,EdgeConnex,chile, Calle Larga,Carretera General San Martín 8400,,27986.17,,7,-32.8552685,-70.6260407
-1839,1909,STTelemedia Global Data Centres,thailand, Bangkok,Pathumwan,,60000,30000,2,13.7524938,100.4935089
+1839,1909,STTelemedia Global,thailand, Bangkok,Pathumwan,,60000,30000,2,13.7524938,100.4935089
 1840,1910,EdgeConnex,usa, FL 32303, Tallahassee,1531 Commonwealth Business Drive,11810,,0.25,46.441062,-87.916286
 1841,1911,Binary Net,usa, NE, Lincoln,134 South 13th Street,150000,10000,1.5,41.7370229,-99.5873816
 1842,1912,omart,uk, Maidenhead SL6 7FW,Clivemont Rd,,30139,,,51.522743,-0.7197368
@@ -1877,7 +1877,7 @@
 1875,1945,DataBank,usa, PA, Pittsburgh,35 Summit Park Drive,115000,47100,4.5,40.9699889,-77.7278831
 1876,1946,MOD Mission Critical,usa, AZ, Phoenix,3402 East University Drive,,90000,,34.395342,-111.763275
 1877,1947,Involta,usa, WI,Green Bay,,,,,44.4308975,-89.6884637
-1878,1948,"Ascenty, a Digital Realty Company",brazil,hortolandia, 4 - Jardim Santa Izabel,Rua Papa João Paulo II,32291.73,,,-22.8620175,-47.2164219
+1878,1948,"Ascenty",brazil,hortolandia, 4 - Jardim Santa Izabel,Rua Papa João Paulo II,32291.73,,,-22.8620175,-47.2164219
 1879,1949,Lumen,usa, PA, Lancaster,1720 Hempstead Rd,5000,920,,40.9699889,-77.7278831
 1880,1950,Equinix,china, Shanghai, Pudong,700 Jinyu Road,30755,10781,,31.2323437,121.4691024
 1881,1951,Enzu,usa, GA, Atlanta,56 Marietta Street NorthWest,,,,32.3293809,-83.1137366
@@ -1896,7 +1896,7 @@
 1894,1964,Digital Realty,usa, CA, Santa Clara,3105 Alfred Street,50000,,9,36.7014631,-118.755997
 1895,1965,DataBank,usa, KS, Lenexa,11200 Lakeview Avenue,44250,26920,2.75,38.27312,-98.5821872
 1896,1966,MOD Mission Critical,usa, IA, Marion,5055 Rec Drive,10000,,0.81,41.9216734,-93.3122705
-1897,1967,"Ascenty, a Digital Realty Company",brazil, 13069-320, Campinas - SP, 1211 - Techno Park,53819.55,,6,-28.117455,-54.718511
+1897,1967,"Ascenty",brazil, 13069-320, Campinas - SP, 1211 - Techno Park,53819.55,,6,-28.117455,-54.718511
 1898,1968,Expedient,usa, CO, Centennial,7347 South Revere Parkway,"32,000","18,500",1.6,38.7251776,-105.607716
 1899,1969,Flexential,usa, PA, Collegeville,101 Troutman Road,203703,203703,7.2,40.9699889,-77.7278831
 1900,1970,Hivelocity,south korea, Gyeonggi-do, Seongnam-si, Bundang-gu,,,,37.2884675,127.0535231
@@ -1953,7 +1953,7 @@
 1951,2022,Zenlayer,usa, IL, Elk Grove Village,1905 Lunt Avenue,,,9000,40.0796606,-89.4337288
 1952,2023,Digital Realty,usa, CA, Santa Clara,1525 Comstock Street,42400,29234,9,36.7014631,-118.755997
 1953,2024,China Telecom,brazil, Santana de Parnaíba - SP, 249 - Res. Tres (Tambore),Av. Marcos Penteado de Ulhôa Rodrigues,,,,-23.4446715,-46.9167722
-1954,2025,"Ascenty, a Digital Realty Company",mexico, Querétaro, Villa Progreso, San José,258000,,31,20.8052225,-99.8837376
+1954,2025,"Ascenty",mexico, Querétaro, Villa Progreso, San José,258000,,31,20.8052225,-99.8837376
 1955,2026,FirstLight,usa,MA, Rockland,1050 Hingham St,,,,18.3414575,-64.9335173
 1956,2027,Digital Realty,usa, IL, Elk Grove Village,1400 East Devon Avenue,305000,148750,30.6,40.0796606,-89.4337288
 1957,2028,MOD Mission Critical,usa, OR, Portland,921 Southwest Washington Street,302262,81906,8,43.9792797,-120.737257
@@ -1962,7 +1962,7 @@
 1960,2031,CoreSite,usa, CO, Denver,639 East 18th Avenue,5100,,,38.7251776,-105.607716
 1961,2032,Limestone Networks,france, 93200 Saint-Denis,114 Rue Ambroise Croizat,,,,,48.93346144,2.354968685
 1962,2033,Telehouse,vietnam, Hanoi, Cầu Giấy, Dịch Vọng Hậu,20451,,,21.0283334,105.854041
-1963,2034,"Ascenty, a Digital Realty Company",brazil, 21535-510, Rio de Janeiro - RJ, 513 - Pavuna,75000,,10,-22.8730922,-43.2481833
+1963,2034,"Ascenty",brazil, 21535-510, Rio de Janeiro - RJ, 513 - Pavuna,75000,,10,-22.8730922,-43.2481833
 1964,2035,MOD Mission Critical,italy,Province of Frosinone, 03100 Frosinone, 9A,,,,,
 1965,2036,Digital Realty,brazil,Osasco, Osasco - SP, 350 - Vila Menck,97000,,14,-23.5324859,-46.7916801
 1966,2037,Colocation America,usa, IL, Chicago,600 South Federal Street,160000,,,40.0796606,-89.4337288
@@ -1972,7 +1972,7 @@
 1970,2042,EXA Infrastructure,uk, London E14 2AX,3 Nutmeg Lane,,699654.18,,46,51.5156177,-0.0919983
 1971,2043,Oracle,usa, AZ,Phoenix,,,,,34.395342,-111.763275
 1972,2044,Amazon AWS,usa, VA, Sterling,22651 Dulles Summit Ct,72000,,,37.1232245,-78.4927721
-1973,2046,STACK INFRASTRUCTURE,usa, IL, Elk Grove Village,1441 Touhy Avenue,221000,,40,40.0796606,-89.4337288
+1973,2046,Stack Infrastructure,usa, IL, Elk Grove Village,1441 Touhy Avenue,221000,,40,40.0796606,-89.4337288
 1974,2047,Oracle,south africa,Johannesburg,,,,,,-26.205,28.049722
 1975,2048,NexTDC,australia, Macquarie Park NSW,6-8 Giffnock Avenue,,93646.02,,30,-33.7814961,151.1256747
 1976,2049,IBM Cloud,germany, Frankfurt,Gablonzer Straße,,,,,50.1106444,8.6820917
@@ -2036,10 +2036,10 @@
 2034,2110,EdgeConnex,usa, MI, Southfield,21005 Lahser Road,39900,,1.5,43.6211955,-84.6824346
 2035,2111,MDC Data Centers,usa,TX, Laredo,13619 Cabezut Dr,8400,,0.65,31.2638905,-98.5456116
 2036,2112,Oracle,australia,Melbourne VIC,,,,,,-37.8142454,144.9631732
-2037,2113,STACK INFRASTRUCTURE,norway, 1900 Fetsund,Heiaveien 9,,9687.52,,3,59.9274398,11.1620196
+2037,2113,Stack Infrastructure,norway, 1900 Fetsund,Heiaveien 9,,9687.52,,3,59.9274398,11.1620196
 2038,2114,EdgeConnex,usa,AZ, Tempe,3011 S 52nd St ste 107,79200,,4.5,34.395342,-111.763275
 2039,2115,OVHCloud,france, 59820 Gravelines,Route de la Ferme Masson,,,,,50.97948161,2.147510951
-2040,2116,STACK INFRASTRUCTURE,norway, Tomter, Holtskogen,Holtskogen Næringspark,19375.04,,6,59.6598277,11.0026279
+2040,2116,Stack Infrastructure,norway, Tomter, Holtskogen,Holtskogen Næringspark,19375.04,,6,59.6598277,11.0026279
 2041,2117,IBM Cloud,japan,Osaka,,,,,,34.661629,135.4999268
 2042,2118,LCL Belgium,belgium, Huizingen 1654 Beersel,Gustave Demeurslaan 132,,,,,50.7481095,4.276727
 2043,2119,omart,uk, Manchester M15 5RL, Hulme,5 Archway,3229,,4,53.4794892,-2.2451148
@@ -2084,40 +2084,40 @@
 2082,2158,OneNeck IT Solutions,usa,CO, Englewood,8675 Concord Center Dr,35000,,,38.7251776,-105.607716
 2083,2159,Zenlayer,china, Jiangsu, Nanjing, Jiangning District,,,,33.0000001,119.9999999
 2084,2160,Data Foundry,usa, TX, Austin,4100 Smith School Road,325000,165000,36,31.2638905,-98.5456116
-2085,2161,STTelemedia Global Data Centres,india, Tamil Nadu 600053, Chennai, Korattur,400000,400000,45,13.1125557,80.20819865
+2085,2161,STTelemedia Global,india, Tamil Nadu 600053, Chennai, Korattur,400000,400000,45,13.1125557,80.20819865
 2086,2162,Data Foundry,usa, TX, Austin,7401 East Ben White Boulevard,40000,21133,,31.2638905,-98.5456116
-2087,2163,STTelemedia Global Data Centres,india, Karnataka 560066, Bengaluru, Brookefield,1000000,1000000,7,12.9684352,77.7481843
-2088,2164,STTelemedia Global Data Centres,india, Telangana 500081, Hyderabad, Madhapur,1200000,1200000,6,17.4423925,78.3971119
-2089,2165,STTelemedia Global Data Centres,india, Delhi 110048, New Delhi, Greater Kailash,1200000,1200000,6,28.6273928,77.1716954
-2090,2166,STTelemedia Global Data Centres,india, West Bengal 700054, Kolkata, Kankurgachi,48000,,2,22.56854645,88.41443831
+2087,2163,STTelemedia Global,india, Karnataka 560066, Bengaluru, Brookefield,1000000,1000000,7,12.9684352,77.7481843
+2088,2164,STTelemedia Global,india, Telangana 500081, Hyderabad, Madhapur,1200000,1200000,6,17.4423925,78.3971119
+2089,2165,STTelemedia Global,india, Delhi 110048, New Delhi, Greater Kailash,1200000,1200000,6,28.6273928,77.1716954
+2090,2166,STTelemedia Global,india, West Bengal 700054, Kolkata, Kankurgachi,48000,,2,22.56854645,88.41443831
 2091,2167,Lancom,greece, Thessaloniki 546 23,Βασιλέως Ηρακλειου 40,,,,,40.6422849,22.92155633
-2092,2168,STTelemedia Global Data Centres,india, Delhi 110048, New Delhi, Greater Kailash,,,,28.6273928,77.1716954
+2092,2168,STTelemedia Global,india, Delhi 110048, New Delhi, Greater Kailash,,,,28.6273928,77.1716954
 2093,2169,EdgeConnex,china, Tianjin, Beichen District,no. 17 Tongjin Road,167766.31,,18,39.1175488,117.1913008
-2094,2170,STTelemedia Global Data Centres,india, Maharashtra 400093, Mumbai, Andheri East,,,,21.5071955,78.9725097
+2094,2170,STTelemedia Global,india, Maharashtra 400093, Mumbai, Andheri East,,,,21.5071955,78.9725097
 2095,2171,TTC Teleport,czechia, 108 00 Praha 10-Malešice,Tiskařská 257/10,,27000,17222,10,50.08386383,14.50802746
-2096,2172,STTelemedia Global Data Centres,india, Karnataka 560066, Bengaluru, Brookefield,,,,12.9684352,77.7481843
-2097,2174,STTelemedia Global Data Centres,thailand, Bangkok 10330, Pathum Wan, Lumphini,60000,60000,2,13.7524938,100.4935089
-2098,2175,STTelemedia Global Data Centres,india, Uttar Pradesh 201307, Noida, Sector 65,20235,20235,35,31.3658035,77.1115565
-2099,2176,STTelemedia Global Data Centres,india, Maharashtra, Mumbai City, Mumbai,179847,179847,9,18.9068356,75.6741579
+2096,2172,STTelemedia Global,india, Karnataka 560066, Bengaluru, Brookefield,,,,12.9684352,77.7481843
+2097,2174,STTelemedia Global,thailand, Bangkok 10330, Pathum Wan, Lumphini,60000,60000,2,13.7524938,100.4935089
+2098,2175,STTelemedia Global,india, Uttar Pradesh 201307, Noida, Sector 65,20235,20235,35,31.3658035,77.1115565
+2099,2176,STTelemedia Global,india, Maharashtra, Mumbai City, Mumbai,179847,179847,9,18.9068356,75.6741579
 2100,2177,KIO Networks,mexico, CDMX, 05000 Ciudad de México, El Yaqui,1200,,5.4,19.4326296,-99.1331785
 2101,2178,KIO Networks,mexico, State of Mexico, Colonia Lázaro Cárdenas,MZ 051,8000,,19.2,19.4839446,-99.6899716
 2102,2179,KIO Networks,mexico, State of Mexico, Naucalpan de Juárez, Villa de las Palmas,3450,,4,19.4839446,-99.6899716
-2103,2180,STTelemedia Global Data Centres,india, Maharashtra 400028, Mumbai, Prabhadevi,,,,21.5071955,78.9725097
+2103,2180,STTelemedia Global,india, Maharashtra 400028, Mumbai, Prabhadevi,,,,21.5071955,78.9725097
 2104,2181,KIO Networks,mexico, N.L., 66265 Monterrey, Valle del Campestre,306,,,26.2384363,-99.8873
 2105,2182,KIO Networks,mexico, CDMX, 05100 Ciudad de México, Lomas de Vista Hermosa,2536,,3.2,19.4326296,-99.1331785
-2106,2183,STTelemedia Global Data Centres,philippines, Cavite,7W89+56M General Trias,,,,,14.2554073,120.8671503
+2106,2183,STTelemedia Global,philippines, Cavite,7W89+56M General Trias,,,,,14.2554073,120.8671503
 2107,2184,KIO Networks,mexico, Qro.,76246 Parque Industrial El Marqués,,,,15,20.8052225,-99.8837376
 2108,2185,KIO Networks,mexico, Yuc., 97288 Mérida, Cd Industrial,,,,20.6845957,-88.8755669
-2109,2186,STTelemedia Global Data Centres,india, Maharashtra 411015, Pune, Dighi,,,,21.5071955,78.9725097
+2109,2186,STTelemedia Global,india, Maharashtra 411015, Pune, Dighi,,,,21.5071955,78.9725097
 2110,2187,KIO Networks,mexico, CDMX, Mexico City, Zedec Santa Fé,902,,1.16,19.4326296,-99.1331785
-2111,2188,STTelemedia Global Data Centres,thailand, Bangkok 10240, Bang Kapi District, Hua Mak,300000,300000,2,13.8157541,100.5597347
+2111,2188,STTelemedia Global,thailand, Bangkok 10240, Bang Kapi District, Hua Mak,300000,300000,2,13.8157541,100.5597347
 2112,2189,KIO Networks,mexico, Son., 83190 Hermosillo, San Benito,511,,1.3,29.3333331,-110.6666671
 2113,2191,KIO Networks,mexico, Yuc., 97130 Mérida, Santa Gertrudis Copo,,,,20.6845957,-88.8755669
-2114,2192,STTelemedia Global Data Centres,philippines, Metro Manila, Makati,2275 Chino Roces Avenue,,,,14.5736108,121.0329706
+2114,2192,STTelemedia Global,philippines, Metro Manila, Makati,2275 Chino Roces Avenue,,,,14.5736108,121.0329706
 2115,2193,KIO Networks,colombia, Bogota, Bogotá,Cra. 106 #15 a 25,1160,,5.6,4.6533816,-74.0836333
 2116,2194,KIO Networks,mexico, Qro.,76246 Parque Industrial El Marqués,,3600,,12,20.8052225,-99.8837376
 2117,2195,CDC Data Centres,new zealand, Silverdale 0932,29 Highgate Parkway,,,,14,-36.6176801,174.6769045
-2118,2197,STTelemedia Global Data Centres,philippines, Davao del Sur,3G4W+7P4 Davao City,,,,,6.6983658,125.3612135
+2118,2197,STTelemedia Global,philippines, Davao del Sur,3G4W+7P4 Davao City,,,,,6.6983658,125.3612135
 2119,2198,KIO Networks,panama, Provincia de Panamá,WC94+WG5 Panama City,,770,,2.5,8.1965366,-79.18773365
 2120,2199,KIO Networks,guatemala, Guatemala City, Zona 4 de Mixco,CONDADO EL NARANJO - San Fermin,174,,,14.6424667,-90.5131361
 2121,2200,China Telecom,china, Zhejiang, Jiaxing,Xiuzhou,,,,29.0000001,119.9999999
@@ -2203,7 +2203,7 @@
 2201,2286,EvoSwitch,usa, CO, Denver,4300 Brighton Boulevard,210000,,16,38.7251776,-105.607716
 2202,2287,Netwise,uk, London,24 Old Jamaica Rd,,11000,6000,0.5,51.5074456,-0.1277653
 2203,2288,Netwise,uk, London,80 Clifton Street,,24000,,,51.5074456,-0.1277653
-2204,2289,STTelemedia Global Data Centres,thailand, Bangkok,Hua Mak,,300000,82000,20,13.7524938,100.4935089
+2204,2289,STTelemedia Global,thailand, Bangkok,Hua Mak,,300000,82000,20,13.7524938,100.4935089
 2205,2290,Data Foundry,usa,TX, Houston,660 Greens Parkway,350000,175000,60,31.2638905,-98.5456116
 2206,2291,MetaEdge,india, Maharashtra, Navi Mumbai, Bhokarpada,820000,,28.5,18.9068356,75.6741579
 2207,2292,Mosaic Data Services,usa, MD,Baltimore,,,,,39.5162401,-76.9382069
@@ -2220,18 +2220,18 @@
 2218,2303,WowRack,usa, TX, Dallas,1950 North Stemmons Freeway,,,,31.2638905,-98.5456116
 2219,2304,EvoSwitch,usa, NJ, Edison,3003 Woodbridge Avenue,830000,,48,40.0757384,-74.4041622
 2220,2305,myLoc a WIIT Company,germany, 80807 München,Stuttgarter Straße 2,,,1076,,48.18333018,11.58490459
-2221,2306,STACK INFRASTRUCTURE,norway, 1900 Fetsund,Heiaveien 9,,9687.52,,3,59.9274398,11.1620196
+2221,2306,Stack Infrastructure,norway, 1900 Fetsund,Heiaveien 9,,9687.52,,3,59.9274398,11.1620196
 2222,2307,omart,uk,Leicester LE1 4AT,,,6674,,,52.6362,-1.1331969
-2223,2308,STACK INFRASTRUCTURE,norway, 1414 Trollåsen,Rosenholmveien 25,,23680.6,,4,59.825873,10.769677
+2223,2308,Stack Infrastructure,norway, 1414 Trollåsen,Rosenholmveien 25,,23680.6,,4,59.825873,10.769677
 2224,2309,IT Solutions Group,usa, IL,Chicago,,120000,85000,,40.0796606,-89.4337288
 2225,2311,MetaEdge,india, Uttar Pradesh 201301, Ghaziabad, Noida,400000,,28.5,31.3658035,77.1115565
-2226,2312,STACK INFRASTRUCTURE,denmark, Copenhagen,Holmbladsgade 142,,17222.26,,1.2,55.6867243,12.5700724
+2226,2312,Stack Infrastructure,denmark, Copenhagen,Holmbladsgade 142,,17222.26,,1.2,55.6867243,12.5700724
 2227,2313,MadeIt,usa, TX,Dallas,,40000,,12,31.2638905,-98.5456116
 2228,2314,azata,usa, TX, Carrollton,4025 Midway Road,25000,,,31.2638905,-98.5456116
 2229,2315,MetaEdge,india, Karnataka, Bengaluru,Whitefield,87000,32125,7.5,14.5203896,75.7223521
-2230,2316,STTelemedia Global Data Centres,india, Tamil Nadu 600002, Chennai, Chintadripet,,,,13.1125557,80.20819865
-2231,2317,STTelemedia Global Data Centres,india, Gujarat, Gujarat International Finance Tec-City,Tata Communications Tier IV Data Center,,,,22.3850051,71.745261
-2232,2318,STTelemedia Global Data Centres,india, Delhi, New Delhi, Gole Market,4500,4500,1.6,28.6273928,77.1716954
+2230,2316,STTelemedia Global,india, Tamil Nadu 600002, Chennai, Chintadripet,,,,13.1125557,80.20819865
+2231,2317,STTelemedia Global,india, Gujarat, Gujarat International Finance Tec-City,Tata Communications Tier IV Data Center,,,,22.3850051,71.745261
+2232,2318,STTelemedia Global,india, Delhi, New Delhi, Gole Market,4500,4500,1.6,28.6273928,77.1716954
 2233,2319,WowRack,usa, NY,Buffalo,,23000,,,43.1561681,-75.8449946
 2234,2320,DataBank,usa, MN, Edina,7700 France Ave S,,26240,1.35,45.9896587,-94.6113288
 2235,2321,Xfernet,ireland, Dublin,4027 Kingswood Road,,,,,53.3493795,-6.2605593
@@ -2256,7 +2256,7 @@
 2254,2343,Zenlayer,tanzania, Dar es Salaam,Kunduchi,,,,,-6.8160837,39.2803583
 2255,2344,LightEdge,usa, CA, San Diego,9725 Scranton Road,100000,56432,2.9,36.7014631,-118.755997
 2256,2345,China Telecom,china, Jiangsu, Wuxi, Yixing,,,,33.0000001,119.9999999
-2257,2346,"Ascenty, a Digital Realty Company",mexico,76295 Qro.,,,20000,,21,20.7413261,-100.4813497
+2257,2346,"Ascenty",mexico,76295 Qro.,,,20000,,21,20.7413261,-100.4813497
 2258,2347,China Telecom,china, Jiangsu, Huaian, 淮海北路 Qingjiangpu Qu,,,,33.0000001,119.9999999
 2259,2348,China Telecom,china, Hunan Sheng, Changsha Shi, Yuelu Qu,,,,27.6662087,111.7487063
 2260,2349,MOD Mission Critical,usa, CO, Denver,910 15th Street,29000,,,38.7251776,-105.607716
@@ -2340,7 +2340,7 @@
 2338,2430,Shatter IT,usa, NY, Buffalo,350 Main Street,3600,,,43.1561681,-75.8449946
 2339,2431,azata,usa, TX, Carrollton,2440 Marsh Lane,135250,5000,2,31.2638905,-98.5456116
 2340,2433,US Secure Hosting Center,usa, IA, Monticello,117 E 1st St,,,,41.9216734,-93.3122705
-2341,2434,STTelemedia Global Data Centres,india,Karnataka, Bengaluru, Sanjayanagara,,,,14.5203896,75.7223521
+2341,2434,STTelemedia Global,india,Karnataka, Bengaluru, Sanjayanagara,,,,14.5203896,75.7223521
 2342,2435,Otava,uk,Manchester,,,,,,53.4794892,-2.2451148
 2343,2436,Skybox Datacenters,usa,TX, Katy,22000 Franz Rd,96129,,26,31.2638905,-98.5456116
 2344,2437,Telepoint,bulgaria, 1303 Sofia,Ovche Pole 122,,,,,42.6781911,23.2983047
@@ -2358,7 +2358,7 @@
 2356,2449,IBM Cloud,canada, QC,Montreal,,,,,52.4760892,-71.8258668
 2357,2450,Amazon AWS,usa,VA, Manassas,10281 Tanner Way,214796,,,37.1232245,-78.4927721
 2358,2451,Colt Technologies,switzerland, Zürich,Albulastrasse 47,,26910,26910,,47.3744489,8.5410422
-2359,2452,STACK INFRASTRUCTURE,italy, PV, 27010 Siziano, 8/10,96875.19,23680.6,6,45.03685465,9.137825083
+2359,2452,Stack Infrastructure,italy, PV, 27010 Siziano, 8/10,96875.19,23680.6,6,45.03685465,9.137825083
 2360,2453,Stream Data Centers,usa, TX, The Woodlands,4001 Technology Forest Blvd,74901,30000,7.8,31.2638905,-98.5456116
 2361,2454,IBM Cloud,canada, ON,Toronto,,,,,50.000678,-86.000977
 2362,2455,CtrlS Datacenters LTD,india, Maharashtra 400710, Navi Mumbai, Mahape,,,16,21.5071955,78.9725097
@@ -2663,7 +2663,7 @@
 2661,2759,Equinix,india, Maharashtra 400072, Mumbai, Andheri East,32529,,,21.5071955,78.9725097
 2662,2760,Comarch ICT,france, Lille,17 Rue Paul Kimpe,,3767,,2,50.6365654,3.0635282
 2663,2761,uNetworks,germany, Stuttgart,Zettachring 10,,,7223,,48.7784485,9.1800132
-2664,2762,STACK INFRASTRUCTURE,norway, 1900 Fetsund,Heiaveien 9,,51666.77,,8,59.9274398,11.1620196
+2664,2762,Stack Infrastructure,norway, 1900 Fetsund,Heiaveien 9,,51666.77,,8,59.9274398,11.1620196
 2665,2763,ByteGrid,usa,MD, Silver Spring,12401 Prosperity Dr,214000,,,39.5162401,-76.9382069
 2666,2764,Redcentric,uk, Reading RG2 0TG,3-5 Worton Drive,,,15000,3,51.4564242,-0.9700664
 2667,2765,Segra,usa, NC, Kannapolis,465 Charles Babbage Lane,50000,15216,2.5,35.6729639,-79.0392919
@@ -2696,7 +2696,7 @@
 2694,2795,EdgeConnex,usa,PA, Pittsburgh,282 Corliss Street,14174,,1,40.9699889,-77.7278831
 2695,2796,Data Foundry,usa,TX, Austin,4100 Smith School Rd,,,,31.2638905,-98.5456116
 2696,2798,omart,uk, London,Brent Cross,,17222,,0.6,51.5074456,-0.1277653
-2697,2799,STACK INFRASTRUCTURE,canada, ON,Toronto,,158000,,8,50.000678,-86.000977
+2697,2799,Stack Infrastructure,canada, ON,Toronto,,158000,,8,50.000678,-86.000977
 2698,2800,Lumen,usa, AZ, Tucson,135 North 6th Avenue,5000,1980,,34.395342,-111.763275
 2699,2801,Dynascale,usa, CA, Los Angeles,1200 West 7th Street,375000,282000,22.5,36.7014631,-118.755997
 2700,2802,CyrusOne,usa, NY, Wappingers Falls,155 Myers Corners Rd,100000,37000,10,43.1561681,-75.8449946
@@ -2714,7 +2714,7 @@
 2712,2815,Lumen,usa,AL, Mobile,50 North Lawrence Street,5100,1829,,,
 2713,2816,Flexential,usa, PA, Allentown,744 Roble Rd,46800,46800,0.849,40.9699889,-77.7278831
 2714,2817,CyberNest,usa, OR, Hillsboro,3935 Northeast Aloclek Drive,,,,43.9792797,-120.737257
-2715,2818,"Ascenty, a Digital Realty Company",brazil, 13185-252, Hortolândia - SP, 4 - Jardim Santa Izabel,43000,,10,-30.55010885,-52.51652319
+2715,2818,"Ascenty",brazil, 13185-252, Hortolândia - SP, 4 - Jardim Santa Izabel,43000,,10,-30.55010885,-52.51652319
 2716,2819,Digital Fortress,usa, OR, Portland,511 Southwest 10th Avenue,10700,6700,2.1,43.9792797,-120.737257
 2717,2820,China Telecom,china, Guangdong, Shenzhen, Longgang,,,,23.1357694,113.1982688
 2718,2821,Zenlayer,vietnam, Hồ Chí Minh, District 1, Da Kao,,,,10.7763897,106.7011391
@@ -2748,7 +2748,7 @@
 2746,2849,NTT Communications,usa, TX, Dallas, Garland,,,,31.2638905,-98.5456116
 2747,2850,Racks Central,singapore, Singapore 535224,23 Tai Seng Dr,,,,,1.357107,103.8194992
 2748,2851,Amazon AWS,usa, VA, Manassas,Brewers Spring Road,115930,,,37.1232245,-78.4927721
-2749,2852,STACK INFRASTRUCTURE,south korea,Seoul,,,,,48,37.5666791,126.9782914
+2749,2852,Stack Infrastructure,south korea,Seoul,,,,,48,37.5666791,126.9782914
 2750,2853,Oracle,canada, ON,Toronto,,,,,50.000678,-86.000977
 2751,2854,NTT Communications,malaysia, Selangor, Cyberjaya, Cyber 6,,,,3.2083304,101.304146
 2752,2855,IBM Cloud,japan,Osaka,,,,,,34.661629,135.4999268
@@ -2789,7 +2789,7 @@
 2787,2891,MadeIt,usa, OH,Cincinnati,,177000,20000,4,40.2253569,-82.6881395
 2788,2892,EXA Infrastructure,canada,Ontario, Toronto,35 John Street suite 9f 101,5005.22,,0.9,50.000678,-86.000977
 2789,2893,LeaseWeb,japan, Tokyo, Shinagawa City,2 Chome-2-35 Higashi-Shinagawa,,23239,,35.6821936,139.762221
-2790,2894,STACK INFRASTRUCTURE,denmark, 2630 Taastrup,Blekinge Blvd.,,,,48,55.64995557,12.29021911
+2790,2894,Stack Infrastructure,denmark, 2630 Taastrup,Blekinge Blvd.,,,,48,55.64995557,12.29021911
 2791,2895,Eurofiber Cloud Infra,netherlands, 5145 RA Waalwijk, Gragtmansstraat,Haven Vii,10064,5381,,51.69728122,5.03794484
 2792,2896,IBM Cloud,canada, ON,Toronto,,,,,50.000678,-86.000977
 2793,2897,NTT Communications,vietnam, Hanoi, Hà Đông, Vạn Phúc,,,,21.0283334,105.854041
@@ -2799,7 +2799,7 @@
 2797,2901,DCI Data Centers,australia,Kidman Park SA,,,,,,-34.9122329,138.5269306
 2798,2902,GleSYS,finland,Oulu,,,5920,4844,,65.0118734,25.4716809
 2799,2903,LeaseWeb,usa, NJ, Edison,3003 Woodbridge Ave,830000,,48,40.0757384,-74.4041622
-2800,2904,STACK INFRASTRUCTURE,italy, PV, 27010 Siziano, 8/10,75347.37,,12,45.03685465,9.137825083
+2800,2904,Stack Infrastructure,italy, PV, 27010 Siziano, 8/10,75347.37,,12,45.03685465,9.137825083
 2801,2905,Open Access Data Centers,democratic republic of the congo, Kinshasa, Avenue Colonel Mondjiba, Concession COTEX N° 63,29063,10764,2,-4.3217055,15.3125974
 2802,2906,Redcentric,uk, West Byfleet, Byfleet,122 Oyster Lane,,6500,,51.3373982,-0.5065245
 2803,2907,Amazon AWS,usa, OR, Boardman,Gar Swanson Drive,,,,43.9792797,-120.737257
@@ -3056,7 +3056,7 @@
 3054,3168,Cogent Communications,usa, WA, Federal Way,32275 32nd Avenue South,33223,33223,,47.2868352,-120.212613
 3055,3169,Zenlayer,indonesia, Jawa Timur 60271, Kota SBY, Genteng,,,,-4.7273402,131.7565983
 3056,3170,Tel Networks Inc.,usa, IL, Chicago,600/700 South Federal Street,,,,40.0796606,-89.4337288
-3057,3171,"Ascenty, a Digital Realty Company",brazil,Vinhedo,Avenida João Batista Falssarela - Jardim dos Passaros,,26909.77,,0.036,-23.0298535,-46.9749847
+3057,3171,"Ascenty",brazil,Vinhedo,Avenida João Batista Falssarela - Jardim dos Passaros,,26909.77,,0.036,-23.0298535,-46.9749847
 3058,3172,Lumen,usa, DE, Newark,504 Interchange Blvd,17440,3300,,38.6920451,-75.4013315
 3059,3173,Zenlayer,usa, CA, San Jose,9 Great Oaks Blvd,,,,36.7014631,-118.755997
 3060,3175,China Telecom,china, Sichuan Sheng, Chengdu Shi, Qingyang Qu,,,,30.5000001,102.4999999
@@ -3127,7 +3127,7 @@
 3125,3241,Limestone Networks,usa, UT, Salt Lake City,179 Social Hall Avenue,,,,39.4225192,-111.714358
 3126,3242,China Telecom,china, Guangdong, Shenzhen, Longgang,,,,23.1357694,113.1982688
 3127,3243,Centersquare,uk, Wokingham, Winnersh,Eskdale Road,60000,60000,5.6,51.4120318,-0.8324037
-3128,3244,"Ascenty, a Digital Realty Company",brazil, 02675-031, Osasco - SP, 306-744 - Vila Menck,96875.19,,14,-23.49394108,-46.75062385
+3128,3244,"Ascenty",brazil, 02675-031, Osasco - SP, 306-744 - Vila Menck,96875.19,,14,-23.49394108,-46.75062385
 3129,3245,Digital Realty,france, Saint-Denis,11-13 Avenue Arts et Métiers,,45000,,16,48.935773,2.3580232
 3130,3246,NorthC,netherlands, 9744 TW Groningen,Liverpoolweg 10,,57049,26910,2.7,53.20750265,6.47452885
 3131,3247,Psychz Networks,usa, TX, Dallas,1515 Round Table Drive,60000,,,31.2638905,-98.5456116
@@ -3172,7 +3172,7 @@
 3170,3288,China Telecom,china,Guangdong, Shenzhen,Futian,,,,23.1357694,113.1982688
 3171,3289,China Telecom,china,Shanghai, Minhang Qu, Caobao Road,,,,31.2323437,121.4691024
 3172,3290,China Telecom,china,Jiangsu, Yangzhou,Guangling,,,,33.0000001,119.9999999
-3173,3291,"Ascenty, a Digital Realty Company",brazil,Rio de Janeiro, 513 - Pavuna,Avenida Coronel Phidias Távora,32000,,3,-22.9110137,-43.2093727
+3173,3291,"Ascenty",brazil,Rio de Janeiro, 513 - Pavuna,Avenida Coronel Phidias Távora,32000,,3,-22.9110137,-43.2093727
 3174,3292,CyrusOne,usa,VA, Sterling,45905 Maries Road,154230,95467,24,37.1232245,-78.4927721
 3175,3293,China Telecom,china,Sichuan Sheng, Chengdu Shi, Longquanyi Qu,,,,30.5000001,102.4999999
 3176,3294,Zenlayer,china,Shanghai, Huangpu District, Ningbo Road,,,,31.2323437,121.4691024
@@ -3180,7 +3180,7 @@
 3178,3296,MOD Mission Critical,sweden,Bromma,Mariehällsvägen 36,,38254,,,59.339769,17.9395411
 3179,3297,China Telecom,china,Zhejiang Sheng, Hangzhou Shi, Binjiang Qu,,,,29.0000001,119.9999999
 3180,3298,China Telecom,china,Guangdong, Shantou,Longhu,,,,23.1357694,113.1982688
-3181,3299,"Ascenty, a Digital Realty Company",mexico,Qro,,,20000,,21,20.8052225,-99.8837376
+3181,3299,"Ascenty",mexico,Qro,,,20000,,21,20.8052225,-99.8837376
 3182,3300,China Telecom,china,Guangdong, Guangzhou,Nansha,,,,23.1357694,113.1982688
 3183,3301,China Telecom,china,Beijing, Xicheng,Xidan,,,,39.9057136,116.3912972
 3184,3302,China Telecom,china,Hunan, Chenzhou,Zixing,,,,27.6662087,111.7487063
@@ -3206,7 +3206,7 @@
 3204,3326,MDC Data Centers,usa,TX, El Paso,11455 Cedar Oak Dr,10169,,0.5,31.2638905,-98.5456116
 3205,3327,Comarch ICT,usa,AZ, Mesa,3223 S Ellsworth Rd,32000,16000,2,34.395342,-111.763275
 3206,3328,EdgeConnex,usa,TX, Katy,1510 Primewest Parkway,91400,,1,31.2638905,-98.5456116
-3207,3329,STACK INFRASTRUCTURE,australia,Wangara,,,,,24,-31.7900584,115.820817
+3207,3329,Stack Infrastructure,australia,Wangara,,,,,24,-31.7900584,115.820817
 3208,3330,CtrlS Datacenters LTD,india,Telangana, Nanakramguda, Financial District,,82262,7.4,17.8495919,79.1151663
 3209,3331,OVHCloud,france,Gravelines,Route de la Ferme Masson,,,,,50.9870697,2.1273118
 3210,3332,Dedicated Solutions,usa,AH, Columbus,535 Scherers Ct,86000,,50,29.6263173,-82.3624983

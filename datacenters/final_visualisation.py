@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 from pandas.core.groupby.generic import DataFrameGroupBy
 
 data: pd.DataFrame = pd.read_csv('geo_data_centers_cleaned.csv', sep=',')  # read in csv data
@@ -36,6 +35,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 from dash import dcc, html
 import plotly.graph_objects as go
+import plotly.express as px
 import pandas as pd
 
 BACKGROUND = '#121212'
@@ -207,9 +207,13 @@ def update_quantity(filter, num) -> go.Figure:
 def create_box(data, filter, min_) -> go.Figure:
     '''Create the go.Box plot.'''
     traces: list = []
-    for key, group in data:
+    colours = px.colors.sequential.OrRd
+    for i, (key, group) in enumerate(data):
         if len(y := group['total space (sqft)']) > min_:
-            traces.append(go.Box(name=key, y=y))
+            traces.append(go.Box(
+                name=key, y=y,
+                marker=dict(color=colours[i % len(colours)])
+            ))
 
     layout = go.Layout(
         xaxis_title=filter,
@@ -238,21 +242,33 @@ def update_size(filter, num) -> go.Figure:
 def create_pie(data, val_col, lab_col) -> go.Figure:
     total: float = data[val_col].sum()
     data['percentage'] = data[val_col] / total
-    large: pd.Series = data[data['percentage'] >= 0.02]
-    small: pd.Series = data[data['percentage'] < 0.02]
+    large: pd.DataFrame = data[data['percentage'] >= 0.02]
+    small: pd.DataFrame = data[data['percentage'] < 0.02]
     other: float = small[val_col].sum()
     if other > 0:
-        large = large._append(pd.DataFrame({lab_col: ['other'], val_col: other, 'percentage': [other / total]}))
-    data = go.Pie(
+        large = pd.concat([large, pd.DataFrame({lab_col: ['Other'], val_col: [other], 'percentage': [other / total]})])
+
+    pie_data = go.Pie(
         labels=large[lab_col],
         values=large[val_col],
         textinfo='label+percent',
         insidetextorientation='radial',
+        hoverinfo='label+percent+value',
+        marker=dict(
+            colors=px.colors.sequential.OrRd,  # Use Plotly's qualitative color palette
+            line=dict(color='#121212', width=2)  # White borders with width 2
+        ),
     )
+
     layout = go.Layout(
         template='plotly_dark',
+        legend=dict(
+            title=dict(text=lab_col.capitalize(), font=dict(size=16)),
+            x=1, y=1,
+        )
     )
-    return go.Figure(data=[data], layout=layout)
+
+    return go.Figure(data=[pie_data], layout=layout)
 
 @app.callback(
     Output('power-graph', 'figure'),
