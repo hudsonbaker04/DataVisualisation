@@ -7,7 +7,7 @@
   ```Bash
   . venv/bin/activate
   ```
-- Now, install the project dependencies:
+- Now, install the project dependencies (this may take a few minutes):
   ```Bash
   pip install --no-user -r requirements.txt
   ```
