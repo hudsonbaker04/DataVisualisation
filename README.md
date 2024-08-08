@@ -19,6 +19,7 @@
   ```Bash
   python visualisation.py
   ```
+**N.B.** Running the code to scrape the data takes a very long time and will overwrite the existing saved CSV files - be careful if running.
 
 ## Structure
 - src/ \
