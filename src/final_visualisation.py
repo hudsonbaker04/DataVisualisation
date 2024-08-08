@@ -1,7 +1,7 @@
 import pandas as pd
 from pandas.core.groupby.generic import DataFrameGroupBy
 
-data: pd.DataFrame = pd.read_csv('geo_data_centers_cleaned.csv', sep=',')  # read in csv data
+data: pd.DataFrame = pd.read_csv('data/geo_data_centers_cleaned.csv', sep=',')  # read in csv data
 
 data.drop(columns=['Unnamed: 0.1'], inplace=True)  # remove useless columns
 data.drop(columns=['Unnamed: 0'], inplace=True)
