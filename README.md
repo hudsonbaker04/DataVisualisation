@@ -15,7 +15,7 @@
   ```Bash
   cd src/
   ```
-- Run the Jupyter notebook or (for a better experience) run the .py file and point a browser at 127.0.0.1:8050
+- Run the Jupyter notebook (be sure to point the Jupyter kernel at the venv) or **(for a better experience)** run the .py file and point a browser at 127.0.0.1:8050
   ```Bash
   python visualisation.py
   ```
